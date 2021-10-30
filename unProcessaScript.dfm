@@ -1,0 +1,251 @@
+object frmProcessaScript: TfrmProcessaScript
+  Left = 222
+  Top = 274
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Processar Script'
+  ClientHeight = 551
+  ClientWidth = 885
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  FormStyle = fsMDIChild
+  OldCreateOrder = False
+  Position = poDefault
+  Visible = True
+  OnCreate = FormCreate
+  DesignSize = (
+    885
+    551)
+  PixelsPerInch = 96
+  TextHeight = 13
+  object RxLabel2: TRxLabel
+    Left = 16
+    Top = 7
+    Width = 266
+    Height = 27
+    Caption = 'Processamento de Script'
+    Color = clSilver
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Arial Black'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = True
+  end
+  object brnLocalizar: TBitBtn
+    Left = 15
+    Top = 507
+    Width = 113
+    Height = 30
+    Hint = 
+      'Localizar o arquivo XML para importar os '#13#10'dados referentes '#224' no' +
+      'ta fiscal de entrada.'
+    Anchors = [akLeft, akBottom]
+    Caption = 'Localizar'
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 0
+    OnClick = brnLocalizarClick
+    Glyph.Data = {
+      76010000424D7601000000000000760000002800000020000000100000000100
+      04000000000000010000130B0000130B00001000000000000000000000000000
+      800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+      333333333333333333FF33333333333330003FF3FFFFF3333777003000003333
+      300077F777773F333777E00BFBFB033333337773333F7F33333FE0BFBF000333
+      330077F3337773F33377E0FBFBFBF033330077F3333FF7FFF377E0BFBF000000
+      333377F3337777773F3FE0FBFBFBFBFB039977F33FFFFFFF7377E0BF00000000
+      339977FF777777773377000BFB03333333337773FF733333333F333000333333
+      3300333777333333337733333333333333003333333333333377333333333333
+      333333333333333333FF33333333333330003333333333333777333333333333
+      3000333333333333377733333333333333333333333333333333}
+    NumGlyphs = 2
+  end
+  object BitBtn1: TBitBtn
+    Left = 793
+    Top = 513
+    Width = 75
+    Height = 25
+    Anchors = [akRight, akBottom]
+    Caption = 'Sair'
+    TabOrder = 1
+    OnClick = SairClick
+    Glyph.Data = {
+      76010000424D7601000000000000760000002800000020000000100000000100
+      04000000000000010000120B0000120B00001000000000000000000000000000
+      800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00330000000000
+      03333377777777777F333301BBBBBBBB033333773F3333337F3333011BBBBBBB
+      0333337F73F333337F33330111BBBBBB0333337F373F33337F333301110BBBBB
+      0333337F337F33337F333301110BBBBB0333337F337F33337F333301110BBBBB
+      0333337F337F33337F333301110BBBBB0333337F337F33337F333301110BBBBB
+      0333337F337F33337F333301110BBBBB0333337F337FF3337F33330111B0BBBB
+      0333337F337733337F333301110BBBBB0333337F337F33337F333301110BBBBB
+      0333337F3F7F33337F333301E10BBBBB0333337F7F7F33337F333301EE0BBBBB
+      0333337F777FFFFF7F3333000000000003333377777777777333}
+    NumGlyphs = 2
+  end
+  object btnLimpar: TBitBtn
+    Left = 135
+    Top = 507
+    Width = 113
+    Height = 30
+    Hint = 
+      'Localizar o arquivo XML para importar os '#13#10'dados referentes '#224' no' +
+      'ta fiscal de entrada.'
+    Anchors = [akLeft, akBottom]
+    Caption = 'Limpar'
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 2
+    OnClick = btnLimparClick
+    Glyph.Data = {
+      76010000424D7601000000000000760000002800000020000000100000000100
+      04000000000000010000120B0000120B00001000000000000000000000000000
+      800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00500005000555
+      555557777F777555F55500000000555055557777777755F75555005500055055
+      555577F5777F57555555005550055555555577FF577F5FF55555500550050055
+      5555577FF77577FF555555005050110555555577F757777FF555555505099910
+      555555FF75777777FF555005550999910555577F5F77777775F5500505509990
+      3055577F75F77777575F55005055090B030555775755777575755555555550B0
+      B03055555F555757575755550555550B0B335555755555757555555555555550
+      BBB35555F55555575F555550555555550BBB55575555555575F5555555555555
+      50BB555555555555575F555555555555550B5555555555555575}
+    NumGlyphs = 2
+  end
+  object Panel1: TPanel
+    Left = 16
+    Top = 40
+    Width = 853
+    Height = 460
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    TabOrder = 3
+    object Splitter1: TSplitter
+      Left = 1
+      Top = 307
+      Width = 851
+      Height = 3
+      Cursor = crVSplit
+      Align = alBottom
+    end
+    object MemoConteudo: TMemo
+      Left = 1
+      Top = 310
+      Width = 851
+      Height = 149
+      Align = alBottom
+      ReadOnly = True
+      ScrollBars = ssVertical
+      TabOrder = 0
+    end
+    object ListViewCte: TListView
+      Left = 1
+      Top = 1
+      Width = 851
+      Height = 306
+      Hint = 'clique duplo para defini'#231#245'es do financeiro'
+      Align = alClient
+      Columns = <
+        item
+          Caption = 'Tipo'
+          Width = 100
+        end
+        item
+          Caption = 'Status'
+          Width = 100
+        end
+        item
+          AutoSize = True
+          Caption = 'Nome do Arquivo'
+        end>
+      ColumnClick = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      GridLines = True
+      ReadOnly = True
+      RowSelect = True
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      SortType = stText
+      TabOrder = 1
+      ViewStyle = vsReport
+      OnSelectItem = ListViewCteSelectItem
+    end
+  end
+  object BitBtn3: TBitBtn
+    Left = 255
+    Top = 508
+    Width = 113
+    Height = 30
+    Hint = 
+      'Localizar o arquivo XML para importar os '#13#10'dados referentes '#224' no' +
+      'ta fiscal de entrada.'
+    Anchors = [akLeft, akBottom]
+    Caption = 'Executar'
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 4
+    OnClick = BitBtn3Click
+    Glyph.Data = {
+      76010000424D7601000000000000760000002800000020000000100000000100
+      04000000000000010000120B0000120B00001000000000000000000000000000
+      800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00555555555555
+      555555555555555555555555555555555555555555FF55555555555559055555
+      55555555577FF5555555555599905555555555557777F5555555555599905555
+      555555557777FF5555555559999905555555555777777F555555559999990555
+      5555557777777FF5555557990599905555555777757777F55555790555599055
+      55557775555777FF5555555555599905555555555557777F5555555555559905
+      555555555555777FF5555555555559905555555555555777FF55555555555579
+      05555555555555777FF5555555555557905555555555555777FF555555555555
+      5990555555555555577755555555555555555555555555555555}
+    NumGlyphs = 2
+  end
+  object BitBtn2: TBitBtn
+    Left = 551
+    Top = 508
+    Width = 113
+    Height = 30
+    Hint = 
+      'Localizar o arquivo XML para importar os '#13#10'dados referentes '#224' no' +
+      'ta fiscal de entrada.'
+    Anchors = [akLeft, akBottom]
+    Caption = 'ok -> txt'
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 5
+    OnClick = BitBtn2Click
+    Glyph.Data = {
+      76010000424D7601000000000000760000002800000020000000100000000100
+      04000000000000010000120B0000120B00001000000000000000000000000000
+      800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00555555555555
+      555555555555555555555555555555555555555555FF55555555555559055555
+      55555555577FF5555555555599905555555555557777F5555555555599905555
+      555555557777FF5555555559999905555555555777777F555555559999990555
+      5555557777777FF5555557990599905555555777757777F55555790555599055
+      55557775555777FF5555555555599905555555555557777F5555555555559905
+      555555555555777FF5555555555559905555555555555777FF55555555555579
+      05555555555555777FF5555555555557905555555555555777FF555555555555
+      5990555555555555577755555555555555555555555555555555}
+    NumGlyphs = 2
+  end
+  object OpenDialog1: TOpenDialog
+    DefaultExt = '*.xml'
+    Filter = 'Arquivo txt|*.txt|Arquivo ok|*.*ok'
+    Options = [ofHideReadOnly, ofAllowMultiSelect, ofExtensionDifferent, ofEnableSizing]
+    Left = 390
+    Top = 174
+  end
+end
