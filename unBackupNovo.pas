@@ -154,7 +154,7 @@ begin
 
   if qyBackup.IsEmpty then
   begin
-    if Pergunta('Nenhum backup foi configurado. Deseja criar o backup padrão?') = 'S' then
+    if Pergunta('Nenhum backup foi configurado! Deseja criar o backup padrão?') = 'S' then
     begin
       for i := 1 to 7 do
       begin
